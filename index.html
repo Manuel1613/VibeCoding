@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCoding - Donde la Música Encuentra el Código</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">♪</span>
+                <h1>VibeCoding</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#estadisticas">Estadísticas</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Sincroniza tu Código con la Música</h2>
+            <p>La plataforma revolucionaria que combina desarrollo web con experiencias sonoras inmersivas</p>
+            <button class="cta-button">Comienza Gratis Hoy</button>
+        </div>
+        <div class="hero-visual">
+            <div class="music-wave"></div>
+            <div class="code-block">
+                <span class="code-line">&lt;div class="vibe"&gt;</span>
+                <span class="code-line"> ♪ Music + Code ♪</span>
+                <span class="code-line">&lt;/div&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="caracteristicas" id="caracteristicas">
+        <h2 class="section-title">Características Principales</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3>Editor Sincronizado</h3>
+                <p>Escribe código mientras la música se adapta a tu ritmo de escritura</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Analítica en Tiempo Real</h3>
+                <p>Visualiza métricas de productividad con gráficos interactivos</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Temas Personalizables</h3>
+                <p>Elige entre múltiples temas visuales y paletas de colores</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Comunidad Global</h3>
+                <p>Conecta con desarrolladores y músicos de todo el mundo</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Rendimiento Ultra</h3>
+                <p>Optimizado para máxima velocidad sin comprometer calidad</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Seguridad Premium</h3>
+                <p>Encriptación end-to-end para tu código y proyectos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="estadisticas" id="estadisticas">
+        <h2 class="section-title">Nuestro Impacto</h2>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Usuarios Activos</h3>
+                <div class="chart-container">
+                    <canvas id="chartUsuarios"></canvas>
+                </div>
+            </div>
+            <div class="stat-card">
+                <h3>Proyectos Realizados</h3>
+                <div class="chart-container">
+                    <canvas id="chartProyectos"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric">
+                <span class="metric-number">50K+</span>
+                <span class="metric-label">Usuarios Activos</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">150K+</span>
+                <span class="metric-label">Proyectos Completados</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">98%</span>
+                <span class="metric-label">Satisfacción</span>
+            </div>
+            <div class="metric">
+                <span class="metric-number">24/7</span>
+                <span class="metric-label">Soporte Disponible</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparador de Planes -->
+    <section class="planes" id="planes">
+        <h2 class="section-title">Planes Disponibles</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="individual">Individual</button>
+            <button class="filter-btn" data-filter="equipo">Equipo</button>
+        </div>
+
+        <div class="plans-grid">
+            <div class="plan-card" data-category="individual">
+                <div class="plan-header">
+                    <h3>Starter</h3>
+                    <span class="plan-price">$9<span class="period">/mes</span></span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ 5 Proyectos</li>
+                    <li>✓ 10GB Almacenamiento</li>
+                    <li>✓ Soporte Email</li>
+                    <li>✗ Colaboración en Tiempo Real</li>
+                </ul>
+                <button class="plan-button">Seleccionar</button>
+            </div>
+
+            <div class="plan-card featured" data-category="individual">
+                <div class="bestseller-badge">Más Popular</div>
+                <div class="plan-header">
+                    <h3>Pro</h3>
+                    <span class="plan-price">$29<span class="period">/mes</span></span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Proyectos Ilimitados</li>
+                    <li>✓ 100GB Almacenamiento</li>
+                    <li>✓ Soporte Prioritario</li>
+                    <li>✓ Colaboración en Tiempo Real</li>
+                </ul>
+                <button class="plan-button">Seleccionar</button>
+            </div>
+
+            <div class="plan-card" data-category="equipo">
+                <div class="plan-header">
+                    <h3>Equipo</h3>
+                    <span class="plan-price">$99<span class="period">/mes</span></span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Todo en Pro</li>
+                    <li>✓ 500GB Almacenamiento</li>
+                    <li>✓ Hasta 10 Usuarios</li>
+                    <li>✓ Análitica Avanzada</li>
+                </ul>
+                <button class="plan-button">Seleccionar</button>
+            </div>
+
+            <div class="plan-card" data-category="equipo">
+                <div class="plan-header">
+                    <h3>Empresa</h3>
+                    <span class="plan-price">Personalizado</span>
+                </div>
+                <ul class="plan-features">
+                    <li>✓ Solución Personalizada</li>
+                    <li>✓ Almacenamiento Ilimitado</li>
+                    <li>✓ Usuarios Ilimitados</li>
+                    <li>✓ Soporte Dedicado 24/7</li>
+                </ul>
+                <button class="plan-button">Contactar Ventas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">¿Listo para Comenzar?</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Email" required>
+            <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 VibeCoding. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
